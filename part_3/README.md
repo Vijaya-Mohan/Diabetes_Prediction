@@ -222,7 +222,7 @@ The table below compares all classification models using both cross-validated RO
 | Logistic Regression (C=1.0) | 0.8178 | 0.0392 | 0.8220 |
 | Decision Tree (max_depth=5) | 0.7423 | 0.0271 | 0.6391 |
 | Random Forest (n_estimators=100, max_depth=10) | 0.8030 | 0.0399 | 0.8187 |
-| Gradient Boosting | 0.7914 | 0.0360 | *Insert Gradient Boosting Test AUC* |
+| Gradient Boosting | 0.7914 | 0.0360 | 0.8333 |
 | Tuned Random Forest (GridSearchCV) | 0.8188 | N/A* | 0.8447** |
 
 \* GridSearchCV reports the mean cross-validated ROC-AUC of the selected hyperparameter configuration. A fold-by-fold standard deviation was not retained from the final grid search output.
