@@ -294,18 +294,13 @@ These overlapping distributions indicate that no single feature can completely s
 # Key Findings from EDA
 
 ### Major Observations
-
-- The **Tested Positive** group showed higher mean values across all five analyzed features.
-- The **Tested Positive** group exhibited higher variability for:
-  - PlasmaGlucoseCon
-  - BMI
-  - Insuline
-- The **Tested Negative** group exhibited higher variability for:
-  - Age
-  - BloodPressure
-- Insuline contained substantial positive skewness and a large number of extreme observations.
-- Median imputation was more suitable than mean imputation due to skewed feature distributions.
-- High within-group variance indicates that multiple features must be combined for effective prediction.
+**Highest Mean Group:**<br> 
+The Tested Positive group has the highest mean for all five analyzed features.
+**Highest Standard Deviation Group:**<br>
+The Tested Positive group has the highest standard deviation for PlasmaGlucoseCon, BMI, and Insuline, while the Tested Negative group has the highest standard deviation for Age and BloodPressure.<br>
+**High within-group variance** is a concern for BMI, Insuline, Age, and BloodPressure, indicating that these variables alone are insufficient for reliable prediction.
+PlasmaGlucoseCon demonstrates the strongest separation between outcome groups and appears to contain the most useful predictive signal for diabetes classification.
+In Part 2, these features will be evaluated collectively within machine learning models rather than individually, as combining multiple features is expected to provide substantially better predictive performance than any single feature alone.
 
 ---
 
@@ -314,20 +309,6 @@ These overlapping distributions indicate that no single feature can completely s
 Among the analyzed variables, **PlasmaGlucoseCon** demonstrated the clearest separation between outcome groups and appears to contain the strongest predictive signal for diabetes classification.
 
 ---
-
-
-Part 1 focused on understanding and preparing the dataset through comprehensive exploratory data analysis.
-
-Key preprocessing tasks included:
-
-- Data inspection
-- Missing value treatment
-- Data type correction
-- Outlier detection
-- Statistical analysis
-- Visualization
-- Correlation analysis
-- Group-based comparisons
 
 The findings indicate that diabetes prediction cannot rely on a single clinical measurement. Instead, a combination of multiple features is expected to provide better predictive capability.
 
